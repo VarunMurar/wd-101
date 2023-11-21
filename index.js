@@ -1,4 +1,4 @@
-// Function to validate the date of birth
+
 function validateDateOfBirth() {
     var dobInput = document.getElementById("dob");
     var dobValue = new Date(dobInput.value);
@@ -8,18 +8,18 @@ function validateDateOfBirth() {
 
     if (dobValue < minDate || dobValue > maxDate) {
         alert("Date of birth must be between 18 and 55 years.");
-        dobInput.value = ""; // Clear the invalid date
+        dobInput.value = ""; 
     } else {
-        alert("Thank you for providing a valid date of birth.");
+        alert("Thank you for providing a correct date of birth.");
     }
 }
 
-// Function to load saved data from web storage
+
 function loadSavedData() {
     var savedData = JSON.parse(localStorage.getItem("registrationData")) || [];
     var tableBody = document.getElementById("tableBody");
 
-    // Clear table body
+   
     tableBody.innerHTML = "";
 
     // Populate table with saved data
@@ -32,7 +32,7 @@ function loadSavedData() {
     });
 }
 
-// Function to handle form submission
+
 document.getElementById("registrationForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -44,17 +44,17 @@ document.getElementById("registrationForm").addEventListener("submit", function 
 
     var formData = { name: name, email: email, password: password, dob: dob, acceptTerms: acceptTerms };
 
-    // Save data to web storage
+  
     var savedData = JSON.parse(localStorage.getItem("registrationData")) || [];
     savedData.push(formData);
     localStorage.setItem("registrationData", JSON.stringify(savedData));
 
-    // Load and display saved data
+   
     loadSavedData();
     
-    // Validate date of birth and show an alert
+    
     validateDateOfBirth();
 });
 
-// Load saved data when the page loads
+
 window.onload = loadSavedData;
