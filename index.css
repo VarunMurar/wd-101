@@ -1,9 +1,9 @@
 body {
-    background-color: aliceblue;
+    background-color: orange;
 }
 
 h1 {
-    margin: 4px;
+    margin: 5px;
 }
 
 .container {
@@ -14,22 +14,22 @@ h1 {
 
 .parts {
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     border: 1px solid;
-    padding: 2%;
+    padding: 4%;
     background-color: rgb(235, 240, 244);
 }
 
 
 
 .table {
-    border: 2px solid;
-    margin:10px ;
+    border: 3px solid;
+    margin:6px ;
 }
 
 .bord {
-    border: 1px solid;
-    padding: 1px;
+    border: 6px solid;
+    padding: 3px;
 }
 
 .float {
