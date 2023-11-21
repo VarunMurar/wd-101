@@ -7,7 +7,7 @@ h1 {
 }
 
 .container {
-    max-width: 70%;
+    max-width: 60%;
     margin: auto;
     text-align: center;
 }
@@ -17,7 +17,7 @@ h1 {
     margin-top: 5px;
     border: 1px solid;
     padding: 4%;
-    background-color: rgb(235, 240, 244);
+    background-color: rgb(235, 240, 254);
 }
 
 
